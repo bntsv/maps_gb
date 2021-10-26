@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boris Netsov">
+    <title>Contacts</title>
+
+    <link rel="icon" href="./images/icons/711170.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <style>
+        body{
+            background-color: initial;
+            overflow: hidden;
+        }
+        main{
+            position: relative;
+            height: 100%;
+            font-size: 2em;
+            z-index: -1;
+            /* border: 5px solid red; */
+        }
+        .aboutAll{
+            display: inline-block;
+            position: absolute;
+        }
+        /* .sideText{
+            display: inline-block;
+            left: 0%;
+            top: 50%;
+            width: 300px;
+            height: 500px;
+            background-color: rgb(248, 248, 248);
+            margin-left: 100px;
+            margin-top: 180px;
+            font-size: 0.5em;
+            font-family: 'Ubuntu', sans-serif;
+            font-style: light 300 bold;
+            text-align: justify;
+            
+            border: 5px solid red;
+        }
+        .text{
+            position: absolute;
+            bottom: 0;
+            line-height: 1.2em;
+            color: rgb(214, 214, 214);
+        } */
+        .title{
+            position: absolute;
+            /* bottom: 0; */
+            font-size: 1.8em;
+        }
+        .contactPanel{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 700px;
+            height: 500px;
+            /* background-color: rgb(248, 248, 248); */
+            margin-left: -350px;
+            margin-top: -250px;
+        }
+        .info, .letter{
+            width: 675px;
+            margin: 10px;
+            font-size: 0.6em;
+            border: 1px solid #0000;
+            /* background-color: rgb(210, 245, 245); */
+            background-color: rgb(248, 248, 248);
+        }
+        .letter{
+            height: 335px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="social">
+            <!-- # @ + -->
+            <a href="https://instagram.com/gal.b.maps"><i class="fas fa-hashtag"></i></a>
+            <!-- <i class="fab fa-instagram"></i> -->
+            <a href="https://www.yahoo.com/"><i class="fas fa-at"></i></a>
+            <a href="https://society6.com/galjura"><i class="fas fa-plus" style="letter-spacing: 0em;"></i></a>
+            <!-- <i style="letter-spacing: 0em; font-size: 1.5em;">+</i> -->
+        </div>
+        
+        <div class="menu">
+            <div class="sub">
+                <a href="../pages/about.html" class="about">about</a>
+                <a href="../pages/gallery.html" class="gallery">gallery</a>
+                <a href="../pages/news.html" class="news">news</a>
+                <a href="../pages/contacts.html" class="contacts">contacts</a>
+            </div>
+            <a href="../index.html" class="logo">gal.b.maps</a>
+        </div>
+    </header>
+    
+    <main>
+        <!-- тъй като няма конкретен адрес, си мислех за контакт форма, но това не мога да направя засега -->
+
+        <!-- <div class="sideText">
+            <h2 class="title">Contact us!</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium earum voluptatum blanditiis corporis accusamus iure amet fugit, veritatis minima sed dignissimos maxime eligendi ad nemo distinctio veniam dicta magnam minus.
+            </p> 
+        </div>   -->
+        <form action="./cgi-bin/registration.cgi" method="GET" class="contactPanel">
+            <input type="text" name="name" autocomplete="off" autofocus placeholder="name" class="info"><br>
+            <input type="text" name="surName" autocomplete="off" autofocus placeholder="surname" class="info"><br>
+            <input type="text" name="adress" autocomplete="off" autofocus placeholder="adress" class="info"><br>
+            <textarea name="comment" rows="2" cols="20" placeholder="write to us!" class="letter"></textarea>
+        </form>
+    </main>
+</body>
+</html>

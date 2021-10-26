@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boris Netsov">
+    <title>Home Page</title>
+
+    <link rel="icon" href="./images/icons/711170.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <style>
+        /* .mapsMain>img{
+            position: relative;
+            width: 100%;
+            z-index: -100;
+            opacity: 0.1;
+        } */
+        
+
+        .clouds>img{
+            position: fixed;
+            width: 50vw;
+            z-index: -1;
+        }
+        #cloud1{
+            left: 50vw;
+            top: 0vw;
+        }
+        #cloud2{
+            left: -40vw;
+            top: 25vw;
+        }
+        /* #cloud3{
+            left: 20vw;
+            top: 20vw;
+        } */
+        #cloud4{
+            left: 20vw;
+            top: 35vw;
+        }
+        #cloud5{
+            left: 0vw;
+            top: -10vw;
+        }
+        .clouds>img{
+                animation: cloudsMove 60s infinite;
+                animation-timing-function: linear;
+        }
+        @keyframes cloudsMove {
+            0%{
+                    margin-left: -100vw;
+            }
+            100%{
+                    margin-left: 140vw;
+            }
+        }
+        main{
+            height: 100%;
+        }
+        #copenhagen, #barcelona, #ljubljana,#plovdiv,#salzburg,#sofia{
+            position: relative;
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -100;
+        }
+        #copenhagen{
+            background-image: url("./incoming/eddited/copenhagen_ed.jpg");
+            min-height: 100%;
+        }
+        #barcelona{
+            background-image: url("./incoming/eddited/barcelona_ed.jpg");
+            min-height: 100%;
+        }
+        #ljubljana{
+            background-image: url("./incoming/eddited/ljubljana_ed.jpg");
+            min-height: 100%;
+        }
+        #plovdiv{
+            background-image: url("./incoming/eddited/plovdiv_ed.jpg");
+            min-height: 100%;
+        }
+        #salzburg{
+            background-image: url("./incoming/salzburg.jpg");
+            min-height: 100%;
+        }
+        #sofia{
+            background-image: url("./incoming/sofia.jpg");
+            min-height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="social">
+            <!-- # @ + -->
+            <a href="https://instagram.com/gal.b.maps"><i class="fas fa-hashtag"></i></a>
+            <!-- <i class="fab fa-instagram"></i> -->
+            <a href="https://www.yahoo.com/"><i class="fas fa-at"></i></a>
+            <a href="https://society6.com/galjura"><i class="fas fa-plus" style="letter-spacing: 0em;"></i></a>
+            <!-- <i style="letter-spacing: 0em; font-size: 1.5em;">+</i> -->
+        </div>
+        
+        <div class="menu">
+            <div class="sub">
+                <a href="./pages/about.html" class="about">about</a>
+                <a href="./pages/gallery.html" class="gallery">gallery</a>
+                <a href="./pages/news.html" class="news">news</a>
+                <a href="./pages/contacts.html" class="contacts">contacts</a>
+            </div>
+            <a href="./index.html" class="logo">gal.b.maps</a>
+        </div>
+    </header>
+    
+    <main>
+        <!-- <div class="mapsMain">
+            <img src="./incoming/eddited/copenhagen_ed.jpg" alt="copenhagen map" id = "copenhagen">
+            <img src="./incoming/eddited/barcelona_ed.jpg" alt="barcelona map" id = "barcelona">
+            <img src="./incoming/eddited/ljubljana_ed.jpg" alt="ljubljana map" id = "ljubljana">
+            <img src="./incoming/eddited/plovdiv_ed.jpg" alt="plovdiv map" id = "plovdiv">
+            <img src="./incoming/salzburg.jpg" alt="salzburg map" id = "salzburg">
+            <img src="./incoming/sofia.jpg" alt="sofia map" id = "sofia">
+        </div> -->
+        <div class="prallax" id = "copenhagen"></div>
+        <div class="about">
+            <img src="./images/cloud/pngpix-com-cloud-png-transparent-image.png" alt="aboutCloud1" class="aboutCloud1 aboutAll">
+            
+            <div class="aboutStory aboutAll">
+                <h2 class="aboutTitle">how it started...</h2>
+                <br>
+                <br>
+                <p class="aboutText">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt reprehenderit a doloribus cum sint dolore atque officiis vitae. Autem ab ratione earum tempora inventore quibusdam quaerat aut similique quos ipsum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Laudantium, voluptatem aliquam saepe earum deleniti quibusdam placeat consequuntur fuga asperiores ut provident nulla, in tempore sunt sint ex optio possimus. Qui!
+                </p>
+            </div>
+        </div>
+        <div class="prallax" id = "barcelona"></div>
+        <div class="prallax" id = "ljubljana"></div>
+        <div class="prallax" id = "plovdiv"></div>
+        <div class="prallax" id = "salzburg"></div>
+        <div class="prallax" id = "sofia"></div>
+         
+        <div class="clouds">
+            <img src="./images/cloud/5d8b2e7efc1c6cbe3dd02302f719931f.png" alt="cloud1" id="cloud1">
+            <img src="./images/cloud/Cloud-PNG-image.png" alt="cloud2" id="cloud2">
+            <!-- <img src="./images/cloud/cloud_PNG28.png" alt="cloud3" id="cloud3"> -->
+            <img src="./images/cloud/Cloud_PNG_Clipart_Picture.png" alt="cloud4" id="cloud4">
+            <img src="./images/cloud/pngpix-com-cloud-png-transparent-image.png" alt="cloud5" id="cloud5">
+        </div>
+        
+    </main>
+    <!-- <footer>
+
+    </footer> -->
+</body>
+</html>

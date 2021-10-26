@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body{
+            cursor: url(./images/icons/location.svg), auto;
+        }
+        header{
+            position: fixed;
+            right: 0%;
+            height: 100%;
+            width: 10em;
+            font-size: 2em;
+            background-color: hotpink;
+            /* border: 5px solid red;
+            box-sizing: border-box; */
+        }
+        .menu{
+            position: fixed;
+            bottom: 2.5em;
+            right: 2.5em;
+            color: black;
+            width: 5em;
+            padding-bottom: 0.25em;
+            border-bottom: 0.5em solid black;
+            text-align: center;
+        }
+        .logo{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 5em;
+            text-align: center;
+        }
+        .sub{
+            display: none;
+            color: white;
+            margin: 1em;
+            line-height: 1.2em;
+            text-align: left;
+        }
+        .menu:hover{
+            color: white;
+            background-color: black;
+            height: 10em;
+            right: 2em;
+            width: 6em;
+        }
+        .menu:hover>.logo{
+            width: 6em; 
+        }
+        .menu:hover>.sub{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="sub">
+                <div>about</div>
+                <div>news</div>
+                <div>contact</div>
+                <div>gallery</div>
+            </div>
+            
+            <div class="logo">LOGO</div>
+            <div class="panel"></div>
+        </div>
+    </header>
+    
+</body>
+</html>

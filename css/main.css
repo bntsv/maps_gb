@@ -1,0 +1,186 @@
+html, body{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    /* background-color: rgb(210, 245, 245); */
+    /* background-color: rgba(240, 240, 240, 0.1); */
+}
+header{
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    position: fixed;
+    right: 0%;
+    height: 100%;
+    width: 10em;
+    /* width: 100%; */
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: medium 500 bold;
+    /* border: 5px solid red;
+    box-sizing: border-box; */
+}
+.menu{
+    position: fixed;
+    bottom: 2.5em;
+    right: 2.5em;
+    color: black;
+    width: 5em;
+    padding-bottom: 0.25em;
+    border-bottom: 0.5em solid black;
+    text-align: center;
+    
+    height: initial;
+    transition: height 5s;
+}
+.logo{
+    display: inline-block;
+    width: 5em;
+    padding-bottom: 0.2em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.logo:link, .logo:visited {
+    text-decoration: none;
+    color: black;
+}
+/* .logo:link:hover, .logo:visited:hover {
+    text-decoration: none;
+    color: white;
+} */
+.sub{
+    display: none;
+}
+.sub>:link, .sub>:visited{
+    text-decoration: none;
+    color: rgb(200, 205, 205);
+}
+.sub>a:hover{
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 5px 5px 20px #fffd;
+}
+.menu:hover{
+    right: 2em;
+    width: 6em;
+    height: 10em;
+    color: white;
+    background-color: black;
+}
+.menu:hover>.logo:link, .menu:hover>.logo:visited{
+    width: 6em;
+    color: white; 
+}
+.menu:hover>.sub{
+    display: block;
+    color: rgb(200, 205, 205);
+    font-size: 0.8em;
+    font-style: light 300 italic;
+    margin: 1em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+.social{
+    text-align: center;
+    margin-top: 2em;
+    letter-spacing: 0.4em;
+    /* border: 5px solid red; */
+}
+.social>:link, .social>:visited{
+    text-decoration: none;
+    color: black;
+}
+.social>a:hover {
+    display: inline-block;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px); }
+    20% { transform: translate(-3px, 0px); }
+    30% { transform: translate(3px, 2px); }
+    40% { transform: translate(1px, -1px); }
+    50% { transform: translate(-1px, 2px); }
+    60% { transform: translate(-3px, 1px); }
+    70% { transform: translate(3px, 1px); }
+    80% { transform: translate(-1px, -1px); }
+    90% { transform: translate(1px, 2px); }
+    100% { transform: translate(1px, -2px); }
+}
+
+/* .mapsMain>img{
+    width: 100%;
+    z-index: -2;
+}
+
+.clouds>img{
+    position: fixed;
+    width: 50vw;
+    z-index: -1;
+}
+#cloud1{
+    left: 50vw;
+    top: 0vw;
+}
+#cloud2{
+    left: -40vw;
+    top: 25vw;
+}
+#cloud4{
+    left: 20vw;
+    top: 35vw;
+}
+#cloud5{
+    left: 0vw;
+    top: -10vw;
+}
+.clouds>img{
+        animation: cloudsMove 60s infinite;
+        animation-timing-function: linear;
+}
+@keyframes cloudsMove {
+    0%{
+            margin-left: -100vw;
+    }
+    100%{
+            margin-left: 140vw;
+     }
+} */
+
+.about{
+    width: 100vw;
+    height: 600px;
+}
+.aboutAll{
+    display: inline-block;
+    position: absolute;
+}
+.aboutCloud1{
+    width: 70%;
+    height: auto;
+}
+.aboutStory{
+    /* top: 50%; */
+    /* left: 50%; */
+    width: 700px;
+    height: 300px;
+    margin-left: 15vw;
+    margin-top: 10vw;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: light 300 bold;
+    text-align: justify;
+    
+    /* border: 5px solid red; */
+}
+.aboutText{
+    line-height: 1.5em;
+    letter-spacing: 0.03em;
+}
+.aboutTitle{
+    font-size: 1.8em;
+}
